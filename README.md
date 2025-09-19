@@ -23,3 +23,28 @@
 ## 5. Post-processing
 - VQSR annotations are incorporated into the VCFs using **bcftools annotate**.  
 - rsIDs are added at this stage as well.
+
+# Structural Variant (SV) Pipeline Overview
+
+## 1. Recurrent CNVs
+- Start with **DRAGEN CNV** call files.  
+- **Filter CNV calls** and extract recurrent loci from VCFs (using partial overlap).  
+- Format recurrent loci into a **BED file**.  
+- Repeat the process with QC filtering (e.g., based on the `FILTER` flag, retaining only `PASS` calls).
+
+### Molly's Script
+- Core functionality: Python + shell scripts, essentially a **bedtools overlap** (reciprocal and one-way overlap).  
+
+### QC Checks
+- Run **mosdepth** for coverage.  
+- Run QC scripts (James' coverage QC scripts).  
+- Use the **coverage caller script** for visualization.  
+- Assess **CNV prevalence** across recurrent CNVs.
+
+## 2. Generic SVs
+- The pipeline is still under development.  
+- Regardless of approach, **DRAGEN SV calls** will serve as input to a genotyper.  
+- Candidate genotypers:  
+  - **sv2** (+ **SURVIVOR**)  
+  - **Graphtyper** ([DecodeGenetics/graphtyper](https://github.com/DecodeGenetics/graphtyper))  
+  - **GATK-SV** ([broadinstitute/gatk-sv](https://github.com/broadinstitute/gatk-sv)) — uncertain if joint-genotyping is supported.  
