@@ -1,10 +1,13 @@
-# genetics_processing_workflow
+## genetics_processing_workflow
 
-SNV/INDEL Pipeline Overview
-Input Data
+## SNV/INDEL Pipeline Overview
+
+#Input Data
+
 Variant calling begins with GVCFs generated using DRAGEN.
+
 GenomicsDB Construction
-  Samples are divided into batches, and a GenomicsDB is created for each batch.
+ Samples are divided into batches, and a GenomicsDB is created for each batch.
   Ultimately, we maintain one GenomicsDB per chromosome.
 Joint Genotyping
   GATK Joint Genotyping is performed using the chromosome-specific GenomicsDB as input.
