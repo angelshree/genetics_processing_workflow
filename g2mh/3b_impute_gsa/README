@@ -1,0 +1,9 @@
+follow these directions for imputation:
+https://topmedimpute.readthedocs.io/en/latest/prepare-your-data/
+https://www.chg.ox.ac.uk/~wrayner/tools/
+
+for the second link, search for the 'Usage with the TopMed reference panel' section.
+    Imputation can fail due to weird formatting issues, so be sure to follow
+    the QC steps detailed above.
+
+TopMed Imputation jobs are submitted on https://imputation.biodatacatalyst.nhlbi.nih.gov/
