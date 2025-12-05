@@ -1,0 +1,13 @@
+asd	sbayesrc_output/main/daner_PGCiPSYCH_loSSC_cleaned.txt
+edu	sbayesrc_output/main/EA4_additive_excl_23andMe.txt
+adhd	sbayesrc_output/main/ADHD2022_iPSYCH_deCODE_PGC.meta.txt
+bip	sbayesrc_output/main/bip2024_eur_no23andMe.txt
+bmi	sbayesrc_output/main/Bmi.giant_ukbb.meta_analysis.combined.23May2018.HapMap2_only.txt
+mdd	sbayesrc_output/main/daner_pgc_mdd_no23andMe_eur_hg19_v3.49.24.11.neff.txt
+ptsd_cc	sbayesrc_output/main/eur_ptsdcasecontrol_pcs_v4_aug3_2021.txt
+ptsd	sbayesrc_output/main/eur_ptsd_pcs_v4_aug3_2021.txt
+hair_dark	sbayesrc_output/main/GCST90691600.h.txt
+height	sbayesrc_output/main/GIANT_HEIGHT_YENGO_2022_GWAS_SUMMARY_STATS_EUR.txt
+scz	sbayesrc_output/main/PGC3_SCZ_wave3.european.autosome.public.v3.txt
+iq	sbayesrc_output/main/SavageJansen_2018_intelligence_metaanalysis.txt
+age_first_live_birth	sbayesrc_output/main/ukb_b_12405.txt
